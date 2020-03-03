@@ -17,7 +17,6 @@ import { AuleComponent } from './aule/aule.component';
 import { ImpostazioniComponent } from './impostazioni/impostazioni.component';
 import { LogoutComponent } from './logout/logout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -34,7 +33,6 @@ import { MatIconModule } from '@angular/material/icon';
     AuleComponent,
     ImpostazioniComponent,
     LogoutComponent,
-    MatIconModule
   ],
   imports: [
     BrowserModule,

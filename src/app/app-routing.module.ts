@@ -17,15 +17,16 @@ import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   { path: 'component', component: AppComponent },
-  { path: 'homepage', component: HomepageComponent, children: [
-    { path: 'orario', component: OrarioComponent, outlet: 'naviga' },
-    { path: 'piano', component: PianoComponent, outlet: 'naviga' },
-    { path: 'sostenuti', component: SostenutiComponent, outlet: 'naviga' },
-    { path: 'mancanti', component: MancantiComponent, outlet: 'naviga' },
-    { path: 'avvisi', component: AvvisiComponent, outlet: 'naviga' },
-    { path: 'contatti', component: ContattiComponent, outlet: 'naviga' },
-    { path: 'aule', component: AuleComponent, outlet: 'naviga' },
-    { path: 'impostazioni', component: ImpostazioniComponent, outlet: 'naviga' }
+  {
+    path: 'homepage', component: HomepageComponent, children: [
+      { path: 'orario', component: OrarioComponent, outlet: 'naviga' },
+      { path: 'piano', component: PianoComponent, outlet: 'naviga' },
+      { path: 'sostenuti', component: SostenutiComponent, outlet: 'naviga' },
+      { path: 'mancanti', component: MancantiComponent, outlet: 'naviga' },
+      { path: 'avvisi', component: AvvisiComponent, outlet: 'naviga' },
+      { path: 'contatti', component: ContattiComponent, outlet: 'naviga' },
+      { path: 'aule', component: AuleComponent, outlet: 'naviga' },
+      { path: 'impostazioni', component: ImpostazioniComponent, outlet: 'naviga' }
     ]
   },
   { path: 'logout', component: FormComponent },

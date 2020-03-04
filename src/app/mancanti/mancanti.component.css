@@ -1,81 +1,95 @@
 .contenitore {
-    height: 100%;
-    width: 100%;
+    height    : 100%;
+    width     : 100%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .bordo {
-    height: 100%;
-    width: 100%;
+    height : 100%;
+    width  : 100%;
     display: flex;
+}
+
+.sx {
+    height         : 100%;
+    width          : 50%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: start;
+    align-items    : center;
+    margin-top     : 5%;
+    margin-bottom  : 5%;
 }
 
 .box {
-    height: 15%;
-    width: 300px;
-    margin: 15px;
+    height          : 50%;
+    width           : 300px;
+    margin          : 15px;
     background-color: #ECCFC3;
-    border-radius: 15px;
-    border: #a30003 2px solid;
-}
-
-.box2 {
-    height: 15%;
-    width: 300px;
-    margin: 15px;
-    background-color: #ECCFC3;
-    border-radius: 15px;
-    border: #a30003 2px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius   : 15px;
+    border          : #a30003 2px solid;
 }
 
 .modifica {
-    height: 28%;
-    width: 100%;
-    border-bottom: #a30003 2px solid;
-    display: flex;
-    align-items: center;
+    height         : 28%;
+    width          : 100%;
+    border-bottom  : #a30003 2px solid;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
 }
 
 .spazio {
     margin-left: 15px;
 }
 
-.spazio2 {
-    margin-left: 35px;
-}
-
 .grassetto {
     font-weight: bold;
 }
 
-.modifica2 {
-    height: 70%;
-    width: 100%;
-    display: flex;
-    align-items: center;
+.spazioDestra {
+    margin-right: 15px;
 }
 
-.sx {
-    height: 150%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    margin-top: 5%;
+.modifica2 {
+    height         : 70%;
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.spazio2 {
+    margin-left: 15px;
+}
+
+.sinistra {
+    width           : 68%;
+    height          : 100%;
+    display         : flex;
+    align-items     : center;
+}
+
+.destra {
+    width           : 27%;
+    height          : 100%;
+    display         : flex;
+    align-items     : center;
+    justify-content : space-around;
+    margin-right    : 15px;
+}
+
+.si {
+    margin-right: 15px;
 }
 
 .dx {
-    height: 150%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    height         : 100%;
+    width          : 50%;
+    display        : flex;
+    flex-direction : column;
     justify-content: start;
-    align-items: center;
-    margin-top: 5%;
+    align-items    : center;
+    margin-top     : 5%;
 }
-

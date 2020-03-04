@@ -25,10 +25,10 @@ const routes: Routes = [
     { path: 'avvisi', component: AvvisiComponent, outlet: 'naviga' },
     { path: 'contatti', component: ContattiComponent, outlet: 'naviga' },
     { path: 'aule', component: AuleComponent, outlet: 'naviga' },
-    { path: 'impostazioni', component: ImpostazioniComponent, outlet: 'naviga' },
-    { path: 'logout', component: LogoutComponent, outlet: 'naviga' },
+    { path: 'impostazioni', component: ImpostazioniComponent, outlet: 'naviga' }
     ]
   },
+  { path: 'logout', component: FormComponent },
   { path: '', component: FormComponent },
 ];
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SostenutiComponent } from '../sostenuti/sostenuti.component';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-mancanti',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MancantiComponent implements OnInit {
 
-  constructor() { }
+  mancantiSostenuti() {
+    this.router.navigate([''])
+  }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }

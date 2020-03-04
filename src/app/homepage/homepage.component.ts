@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor(private router: Router) { }
-
-  cambio() {
-    this.router.navigate(['/form']);
+  mancantiSostenuti() {
+    this.router.navigate([''])
   }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }

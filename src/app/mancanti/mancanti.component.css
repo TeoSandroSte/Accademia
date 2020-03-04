@@ -1,0 +1,81 @@
+.contenitore {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.bordo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.box {
+    height: 15%;
+    width: 300px;
+    margin: 15px;
+    background-color: #ECCFC3;
+    border-radius: 15px;
+    border: #a30003 2px solid;
+}
+
+.box2 {
+    height: 15%;
+    width: 300px;
+    margin: 15px;
+    background-color: #ECCFC3;
+    border-radius: 15px;
+    border: #a30003 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modifica {
+    height: 28%;
+    width: 100%;
+    border-bottom: #a30003 2px solid;
+    display: flex;
+    align-items: center;
+}
+
+.spazio {
+    margin-left: 15px;
+}
+
+.spazio2 {
+    margin-left: 35px;
+}
+
+.grassetto {
+    font-weight: bold;
+}
+
+.modifica2 {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sx {
+    height: 150%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.dx {
+    height: 150%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 5%;
+}
+

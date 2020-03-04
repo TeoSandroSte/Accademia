@@ -22,7 +22,7 @@
             <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="opzione">
                 <div>AULE</div>
             </a>
-            <a [routerLink]="logout" class="opzione">
+            <a (click)="mancantiSostenuti()" class="opzione">
                 <div>LOGOUT</div>
             </a>
         </div>

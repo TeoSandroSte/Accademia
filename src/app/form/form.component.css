@@ -1,138 +1,138 @@
 .contenitore {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  height        : 100%;
+  width         : 100%;
+  display       : flex;
+  flex-direction: column;
 }
 
 .form {
-    height: 600px;
-    width: 400px;
-    margin: 20px auto auto auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .unodue{
-    display: flex;
-    height: 50%;
-  }
-  
-  .sopralogo{
-    display: flex;
-  }
-  
-  .logo{
-    margin: auto;
-  }
+  height        : 600px;
+  width         : 400px;
+  margin        : 20px auto auto auto;
+  display       : flex;
+  flex-direction: column;
+}
 
-  .immagine{
-    margin: -40px auto auto auto;
-  }
-  
-  .duedue{
-    display: flex;
-    height: 50%;
-  }
-  
-  .dati{
-    display: flex;
-    flex-direction: column;
-    margin: -30px auto auto auto;
-    color: white;
-    align-content: space-around;
-  }
-  
-  .login{
-    margin: auto;
-    margin-bottom: 24px;
-    font-size: 35px;
-  }
-  
-  *,
-  *::after,
-  *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    font-size: 62,5%;
-  }
-  
-  .form__label {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    font-size: 15px;
-    margin-left: 2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1.6rem;
-    display: block;
-    transition: all 0.3s;
-    transform: translateY(0rem);
-  }
-  
-  .form__input {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    color: #333;
-    font-size: 1.2rem;
-      margin: 0 auto;
-    padding: 1.5rem 2rem;
-    border-radius: 30px;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    width: 275px;
-    height: 0.1px;
-    display: block;
-    border-bottom: 0.3rem solid transparent;
-    transition: all 0.3s;
-  }
-  
-  .form__input:placeholder-shown + .form__label {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translateY(-4rem);
-    transform: translateY(-4rem);
-  }
-  
-  .soprabottone{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .button4 {
-    width: 100px;
-    display:inline-block;
-    padding:0.3em 1.2em;
-    margin: 0px auto auto auto;
-    border:0.16em solid rgba(255,255,255,0);
-    border-radius:20px;
-    box-sizing: border-box;
-    font-weight: 350;
-    font-size: 20px;
-    color:white;
-    background-color: transparent;
-    text-align:center;
-    border-color: rgba(255,255,255,1);
-    }
-  
-  
-    .button4:hover {
-      border-color: #a30003;
-      color: #333;
-      background-color: white;
-    }
-  
-  .spacer {
-    flex: 1;
-  }
-  
-  .cls-1 {
-    fill: none;
-  }
-  
-  .cls-2 {
-    fill: #ffffff;
-  }
+.unodue {
+  display: flex;
+  height : 50%;
+}
 
-  .font {
-    font-family: 'Times New Roman';
-  }
+.sopralogo {
+  display: flex;
+}
+
+.logo {
+  margin: auto;
+}
+
+.immagine {
+  margin: -40px auto auto auto;
+}
+
+.duedue {
+  display: flex;
+  height : 50%;
+}
+
+.dati {
+  display       : flex;
+  flex-direction: column;
+  margin        : -30px auto auto auto;
+  color         : white;
+  align-content : space-around;
+}
+
+.login {
+  margin       : auto;
+  margin-bottom: 24px;
+  font-size    : 35px;
+}
+
+*,
+*::after,
+*::before {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: inherit;
+  font-size : 62, 5%;
+}
+
+.form__label {
+  font-family  : 'Times New Roman', Times, serif, sans-serif;
+  font-size    : 15px;
+  margin-left  : 2rem;
+  margin-top   : 0.5rem;
+  margin-bottom: 1.6rem;
+  display      : block;
+  transition   : all 0.3s;
+  transform    : translateY(0rem);
+}
+
+.form__input {
+  font-family     : 'Times New Roman', Times, serif, sans-serif;
+  color           : #333;
+  font-size       : 1.2rem;
+  margin          : 0 auto;
+  padding         : 1.5rem 2rem;
+  border-radius   : 30px;
+  background-color: rgb(255, 255, 255);
+  border          : none;
+  width           : 275px;
+  height          : 0.1px;
+  display         : block;
+  border-bottom   : 0.3rem solid transparent;
+  transition      : all 0.3s;
+}
+
+.form__input:placeholder-shown+.form__label {
+  opacity          : 0;
+  visibility       : hidden;
+  -webkit-transform: translateY(-4rem);
+  transform        : translateY(-4rem);
+}
+
+.soprabottone {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.button4 {
+  width           : 100px;
+  display         : inline-block;
+  padding         : 0.3em 1.2em;
+  margin          : 0px auto auto auto;
+  border          : 0.16em solid rgba(255, 255, 255, 0);
+  border-radius   : 20px;
+  box-sizing      : border-box;
+  font-weight     : 350;
+  font-size       : 20px;
+  color           : white;
+  background-color: transparent;
+  text-align      : center;
+  border-color    : rgba(255, 255, 255, 1);
+}
+
+
+.button4:hover {
+  border-color    : #a30003;
+  color           : #333;
+  background-color: white;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.cls-1 {
+  fill: none;
+}
+
+.cls-2 {
+  fill: #ffffff;
+}
+
+.font {
+  font-family: 'Times New Roman';
+}

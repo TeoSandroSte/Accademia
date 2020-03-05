@@ -2,10 +2,10 @@
     <div class="navbar2">
         <div class="navbarcentrale2">
             <a [routerLink]='[{ outlets: { naviga: ["orario"] } }]' class="opzione">
-                    <div>ORARIO LEZIONI</div>
+                <div>ORARIO LEZIONI</div>
             </a>
             <a [routerLink]='[{ outlets: { naviga: ["piano"] } }]' class="opzione">
-                    <div>PIANO STUDI</div>
+                <div>PIANO STUDI</div>
             </a>
             <a [routerLink]='[{ outlets: { naviga: ["sostenuti"] } }]' class="opzione">
                 <div>ESAMI SOSTENUTI</div>
@@ -22,7 +22,7 @@
             <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="opzione">
                 <div>AULE</div>
             </a>
-            <a [routerLink]='[{ outlets: { naviga: ["logout"] } }]' class="opzione">
+            <a (click)="mancantiSostenuti()" class="opzione">
                 <div>LOGOUT</div>
             </a>
         </div>
@@ -33,14 +33,14 @@
                 <div class="ciaocnt">
                     <div class="ciao">
                         <p class="testo">Benvenuto!</p>
-                        <p class="testo">Nome Cognome</p>
+                        <p class="testo"[innerHTML]="nomeCognome"></p>
                     </div>
                 </div>
                 <div class="immagineprofilocnt">
                     <div class="sopraprofilo">
                         <div class="riassunto">
                             <p class="scuola grande blu">Riassunto studente</p>
-                            <p class="scuola blu">Indirizzo:<br>Nome scuola di appartenenza</p>
+                            <p class="scuola blu">Indirizzo:<br>Nuove Tecnologie dell'Arte</p>
                         </div>
                         <div class="fotoprofilo">
                             <img src="/assets/Img/mappa0.jpg" class="faccia">
@@ -48,16 +48,16 @@
                     </div>
                     <div class="sottoprofilo">
                         <div class="colonnauno">
-                            <p class="blu">Anno Accademico</p>
-                            <p class="blu">anno</p>
+                            <p class="blu">Anno Accademico: </p>
+                            <p class="blu">2019/2020</p>
                         </div>
                         <div class="colonnadue">
-                            <p class="blu">Esami sostenuti</p>
-                            <p class="blu">numero</p>
+                            <p class="blu">Esami sostenuti: </p>
+                            <p class="blu">8</p>
                         </div>
                         <div class="colonnatre">
-                            <p class="blu">Crediti Totali</p>
-                            <p class="blu">crediti</p>
+                            <p class="blu">Crediti Totali: </p>
+                            <p class="blu">64</p>
                         </div>
                     </div>
                 </div>

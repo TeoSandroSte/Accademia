@@ -8,9 +8,9 @@ describe('OrarioComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OrarioComponent ]
+      declarations: [OrarioComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

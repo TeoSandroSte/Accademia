@@ -8,9 +8,9 @@ describe('SostenutiComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SostenutiComponent ]
+      declarations: [SostenutiComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

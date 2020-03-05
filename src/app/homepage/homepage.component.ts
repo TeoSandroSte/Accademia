@@ -8,17 +8,19 @@ import { Router } from '@angular/router';
 })
 export class HomepageComponent implements OnInit {
 
-  @ViewChild("userName", {static: false} ) username: ElementRef;
+
+  @ViewChild("matricola", {static: false} ) username: ElementRef;
   nomeCognome: string;
 
   constructor(private router: Router) { }
 
-  cambio() {
-    this.router.navigate(['/form']);
+  mancantiSostenuti() {
+    this.router.navigate([''])
+
   }
 
   ngOnInit() {
-    this.nomeCognome="dalia blanco";
+    this.nomeCognome="Mario Rossi";
   }
 
 }

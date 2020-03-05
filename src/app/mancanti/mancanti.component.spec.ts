@@ -8,9 +8,9 @@ describe('MancantiComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MancantiComponent ]
+      declarations: [MancantiComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

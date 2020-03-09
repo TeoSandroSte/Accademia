@@ -19,8 +19,8 @@ export class HomepageComponent implements OnInit {
     this.router.navigate([ '/homepage', { outlets: { 'naviga': ['sostenuti'] } } ], { relativeTo: this.route });
   }
 
-  mancantiSostenuti() {
-    this.router.navigate([''])
+  logout() {
+    this.router.navigate(['logout'])
   }
 
   ngOnInit() {

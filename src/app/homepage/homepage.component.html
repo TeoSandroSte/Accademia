@@ -13,10 +13,10 @@
     <mat-icon class="icona" (click)="snav.toggle()" fxShow="false" fxShow.lt-lg="true">
         menu
     </mat-icon>
-    <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="naviga" fxShow.lt-lg="false">
+    <a [routerLink]='[{ outlets: { naviga: ["calendario"] } }]' class="naviga" fxShow.lt-lg="false">
         <div>CALENDARIO</div>
     </a>
-    <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="naviga" fxShow.lt-lg="false">
+    <a [routerLink]='[{ outlets: { naviga: ["piano"] } }]' class="naviga" fxShow.lt-lg="false">
         <div>PIANO STUDI</div>
     </a>
     <button mat-button [matMenuTriggerFor]="menu" class="naviga" fxShow.lt-lg="false">
@@ -26,25 +26,19 @@
         </mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-        <button mat-menu-item>Sostenuti</button>
-        <button mat-menu-item>Mancanti</button>
+        <button mat-menu-item [routerLink]='[{ outlets: { naviga: ["sostenuti"] } }]' fxShow.lt-lg="false">Sostenuti</button>
+        <button mat-menu-item [routerLink]='[{ outlets: { naviga: ["mancanti"] } }]' fxShow.lt-lg="false">Mancanti</button>
     </mat-menu>
-    <!--<a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="naviga" fxShow.lt-lg="false">
-        <div>ESAMI SOSTENUTI</div>
-    </a>
-    <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="naviga" fxShow.lt-lg="false">
-        <div>ESAMI MANCANTI</div>
-    </a>-->
-    <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="naviga" fxShow.lt-lg="false">
+    <a [routerLink]='[{ outlets: { naviga: ["avvisi"] } }]' class="naviga" fxShow.lt-lg="false">
         <div>AVVISI</div>
     </a>
-    <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="naviga" fxShow.lt-lg="false">
+    <a [routerLink]='[{ outlets: { naviga: ["contatti"] } }]' class="naviga" fxShow.lt-lg="false">
         <div>CONTATTI</div>
     </a>
     <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="naviga" fxShow.lt-lg="false">
         <div>AULE</div>
     </a>
-    <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="naviga" fxShow.lt-lg="false">
+    <a (click)="logout()" class="naviga" fxShow.lt-lg="false">
         <div>LOGOUT</div>
     </a>
 </mat-toolbar>
@@ -114,6 +108,8 @@
             </div>
             <div class="spazio"></div>
             <div class="nucleo">
+                <router-outlet name="naviga">
+                </router-outlet>
             </div>
         </main>
         <!--<div class="tutto">

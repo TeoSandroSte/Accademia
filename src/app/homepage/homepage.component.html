@@ -1,75 +1,164 @@
-<div class="tutto">
-    <div class="navbar2">
-        <div class="navbarcentrale2">
-            <a [routerLink]='[{ outlets: { naviga: ["orario"] } }]' class="opzione">
-                <div>ORARIO LEZIONI</div>
+<header>
+    <div class="header-principale">
+        <img class="logo-accademia" src="../assets/Img/LogoAlbertinaVettoriale-bianco-header-2.png">
+        <div class="spazio"></div>
+        <div class="cerca">
+            <input class="form-control form-control-sm mr-3" type="text" placeholder="Search" aria-label="Search">
+            <button mat-raised-button class="bottone">Cerca</button>
+        </div>
+    </div>
+</header>
+<!--quello che compare nella NAVbar-->
+<mat-toolbar class="header-secondario sticky-top">
+    <mat-icon class="icona" (click)="snav.toggle()" fxShow="false" fxShow.lt-lg="true">
+        menu
+    </mat-icon>
+    <a [routerLink]='[{ outlets: { naviga: ["calendario"] } }]' class="naviga" fxShow.lt-lg="false">
+        <div>CALENDARIO</div>
+    </a>
+    <a [routerLink]='[{ outlets: { naviga: ["piano"] } }]' class="naviga" fxShow.lt-lg="false">
+        <div>PIANO STUDI</div>
+    </a>
+    <button mat-button [matMenuTriggerFor]="menu" class="naviga" fxShow.lt-lg="false">
+        ESAMI
+        <mat-icon>
+            keyboard_arrow_down
+        </mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]='[{ outlets: { naviga: ["sostenuti"] } }]' fxShow.lt-lg="false">Sostenuti</button>
+        <button mat-menu-item [routerLink]='[{ outlets: { naviga: ["mancanti"] } }]' fxShow.lt-lg="false">Mancanti</button>
+    </mat-menu>
+    <a [routerLink]='[{ outlets: { naviga: ["avvisi"] } }]' class="naviga" fxShow.lt-lg="false">
+        <div>AVVISI</div>
+    </a>
+    <a [routerLink]='[{ outlets: { naviga: ["contatti"] } }]' class="naviga" fxShow.lt-lg="false">
+        <div>CONTATTI</div>
+    </a>
+    <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="naviga" fxShow.lt-lg="false">
+        <div>AULE</div>
+    </a>
+    <a (click)="logout()" class="naviga" fxShow.lt-lg="false">
+        <div>LOGOUT</div>
+    </a>
+</mat-toolbar>
+<mat-sidenav-container class="schermo">
+    <!--quello che compare nella SIDEbar-->
+    <mat-sidenav #snav>
+        <mat-nav-list>
+            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
+                <div>CALENDARIO</div>
             </a>
-            <a [routerLink]='[{ outlets: { naviga: ["piano"] } }]' class="opzione">
+            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
                 <div>PIANO STUDI</div>
             </a>
-            <a [routerLink]='[{ outlets: { naviga: ["sostenuti"] } }]' class="opzione">
+            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
                 <div>ESAMI SOSTENUTI</div>
             </a>
-            <a [routerLink]='[{ outlets: { naviga: ["mancanti"] } }]' class="opzione">
+            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
                 <div>ESAMI MANCANTI</div>
             </a>
-            <a [routerLink]='[{ outlets: { naviga: ["avvisi"] } }]' class="opzione">
+            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
                 <div>AVVISI</div>
             </a>
-            <a [routerLink]='[{ outlets: { naviga: ["contatti"] } }]' class="opzione">
+            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
                 <div>CONTATTI</div>
             </a>
-            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="opzione">
+            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
                 <div>AULE</div>
             </a>
-            <a (click)="mancantiSostenuti()" class="opzione">
+            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
                 <div>LOGOUT</div>
             </a>
-        </div>
-    </div>
-    <div class="sotto">
-        <div class="contenuto">
-            <div class="sx">
-                <div class="ciaocnt">
-                    <div class="ciao">
-                        <p class="testo">Benvenuto!</p>
-                        <p class="testo"[innerHTML]="nomeCognome"></p>
+        </mat-nav-list>
+    </mat-sidenav>
+    <!--quello che compare sotto-->
+    <mat-sidenav-content>
+        <main class="main">
+            <div class="riassunto">
+                <div class="blocco-alto">
+                    Riassunto Studente
+                </div>
+                <div class="blocco-medio">
+                    <div class="indirizzo-contenitore">
+                        <div class="indirizzo">
+                            Indirizzo:
+                            <br>
+                            Nuove Tecnologie dell'arte
+                        </div>
+                    </div>
+                    <div class="immagine-profilo">
+                        <img src="/assets/Img/profilo.jpeg" class="profilo">
                     </div>
                 </div>
-                <div class="immagineprofilocnt">
-                    <div class="sopraprofilo">
-                        <div class="riassunto">
-                            <p class="scuola grande blu">Riassunto studente</p>
-                            <p class="scuola blu">Indirizzo:<br>Nuove Tecnologie dell'Arte</p>
+                <div class="blocco-sotto">
+                    <div class="blocco-sotto-uno">
+                        <div>Anno</div>
+                        <div>1</div>
+                    </div>
+                    <div class="blocco-sotto-due">
+                        <div>Media</div>
+                        <div>27.7</div>
+                    </div>
+                    <div class="blocco-sotto-tre">
+                        <div>Crediti</div>
+                        <div>48</div>
+                    </div>
+                </div>
+            </div>
+            <div class="spazio"></div>
+            <div class="nucleo">
+                <router-outlet name="naviga">
+                </router-outlet>
+            </div>
+        </main>
+        <!--<div class="tutto">
+
+            <div class="sotto">
+                <div class="contenuto">
+                    <div class="sx">
+                        <div class="ciaocnt">
+                            <div class="ciao">
+                                <p class="testo">Benvenuto!</p>
+                                <p class="testo" [innerHTML]="nomeCognome"></p>
+                            </div>
                         </div>
-                        <div class="fotoprofilo">
-                            <img src="/assets/Img/mappa0.jpg" class="faccia">
+                        <div class="immagineprofilocnt">
+                            <div class="sopraprofilo">
+                                <div class="riassunto">
+                                    <p class="scuola grande blu">Riassunto studente</p>
+                                    <p class="scuola blu">Indirizzo:<br>Nuove Tecnologie dell'Arte</p>
+                                </div>
+                                <div class="fotoprofilo">
+                                    <img src="/assets/Img/mappa0.jpg" class="faccia">
+                                </div>
+                            </div>
+                            <div class="sottoprofilo">
+                                <div class="colonnauno">
+                                    <p class="blu">Anno Accademico: </p>
+                                    <p class="blu">2019/2020</p>
+                                </div>
+                                <div class="colonnadue">
+                                    <p class="blu">Esami sostenuti: </p>
+                                    <p class="blu">8</p>
+                                </div>
+                                <div class="colonnatre">
+                                    <p class="blu">Crediti Totali: </p>
+                                    <p class="blu">64</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="sottoprofilo">
-                        <div class="colonnauno">
-                            <p class="blu">Anno Accademico: </p>
-                            <p class="blu">2019/2020</p>
-                        </div>
-                        <div class="colonnadue">
-                            <p class="blu">Esami sostenuti: </p>
-                            <p class="blu">8</p>
-                        </div>
-                        <div class="colonnatre">
-                            <p class="blu">Crediti Totali: </p>
-                            <p class="blu">64</p>
+                    <div class="dx">
+                        <div class="immaginesfondo">
+                            <div class="sfondo">
+                                <router-outlet name="naviga" class="contienirouter">
+                                </router-outlet>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="dx">
-                <div class="immaginesfondo">
-                    <div class="sfondo">
-                        <router-outlet name="naviga" class="contienirouter">
-                        </router-outlet>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        </div>-->
+    </mat-sidenav-content>
+</mat-sidenav-container>

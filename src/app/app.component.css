@@ -1,3 +1,52 @@
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.form{
+    width: 290px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login{
+    margin: 20px auto;
+    font-size: xx-large;
+    color: white;
+}
+
+.form-group{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.bottone{
+    width: 25%;
+    margin: 40px 10% auto auto;
+}
+
+
+
+.header-principale {
+    padding: 20px;
+    display: flex;
+    margin: 0 200px 0 200px;
+}
+
+.logo-accademia{
+    width: 145px;
+    height: 68px;
+}
+
+.spazio{
+    flex-grow: 1;
+}
+
+
+
+
 .tuttoloschermo {
     width           : 100%;
     height          : 100%;
@@ -6,7 +55,7 @@
     background-color: black;
 }
 
-.navbar1 {
+.navbar {
     background-color: #a30003;
     height          : 150px;
     width           : 100%;
@@ -53,7 +102,6 @@
 
 .metasotto {
     width           : 100%;
-    height          : 100%;
     background-color: #a30003;
 }
 

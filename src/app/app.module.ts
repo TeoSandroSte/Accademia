@@ -28,6 +28,8 @@ import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSelectModule } from '@angular/material/select';
 import { MatMenuModule } from '@angular/material/menu';
+import { DatiService } from './dati.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -60,9 +62,10 @@ import { MatMenuModule } from '@angular/material/menu';
     MatListModule,
     FlexLayoutModule,
     MatSelectModule,
-    MatMenuModule
+    MatMenuModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ DatiService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

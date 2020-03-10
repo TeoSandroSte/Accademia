@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    margin: 0 10px 10px 10px;
 }
 
 .blocco {
@@ -15,6 +14,8 @@
     border: 2px #ae3739 solid;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .sopra {
@@ -46,4 +47,17 @@
     margin: 10px 10px 10px 40px;
     word-wrap: break-word;
     word-break: break-all;
+}
+
+.spazio {
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 1445px) {
+    .flusso {
+        align-items: center;
+    }
+    .blocco {
+
+    }
 }

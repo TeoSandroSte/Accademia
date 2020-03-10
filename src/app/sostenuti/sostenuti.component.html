@@ -2,19 +2,17 @@
     <ng-container *ngFor="let elements of matricole">
         <ng-container *ngIf="elements.matricola == matricolaInput">
             <ng-container *ngFor="let corsiSeguiti of elements.corsiSeguiti">
-                <div class="flusso">
-                    <div class="blocco">
-                        <div class="sopra">
-                                <div class="centrosopra">{{corsiSeguiti.nome}}</div>
-                        </div>
-                        <div class="sotto">
-                                <div class="centrosotto">
-                                    Valutazione: {{corsiSeguiti.voto}}
-                                    <br>
-                                    Data: {{corsiSeguiti.data}}
-                                    <br>
-                                    Crediti: {{corsiSeguiti.crediti}}
-                                </div>
+                <div class="blocco">
+                    <div class="sopra">
+                        <div class="centrosopra">{{corsiSeguiti.nome}}</div>
+                    </div>
+                    <div class="sotto">
+                        <div class="centrosotto">
+                            Valutazione: {{corsiSeguiti.voto}}
+                            <br>
+                            Data: {{corsiSeguiti.data}}
+                            <br>
+                            Crediti: {{corsiSeguiti.crediti}}
                         </div>
                     </div>
                 </div>

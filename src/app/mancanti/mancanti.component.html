@@ -2,7 +2,6 @@
     <ng-container *ngFor="let elements of matricole">
         <ng-container *ngIf="elements.matricola == matricolaInput">
             <ng-container *ngFor="let corsiMancanti of elements.corsiMancanti">
-                <div class="flusso">
                     <div class="blocco">
                         <div class="sopra">
                             <div class="centrosopra">Esame Mancante</div>
@@ -15,7 +14,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </ng-container>
         </ng-container>
     </ng-container>

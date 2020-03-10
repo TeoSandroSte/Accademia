@@ -1,0 +1,32 @@
+{
+  "dati": [
+    {
+      "matricola": "11111q",
+      "password": "qwerty",
+      "corsi": [
+        {
+          "corso": "paolo",
+          "giorno": "michele"
+        },
+        {
+          "corso": "paola",
+          "giorno": "michela"
+        }
+      ]
+    },
+    {
+      "matricola": "22222q",
+      "password": "asdfg",
+      "corsi": [
+        {
+          "corso": "gianni",
+          "giorno": "pinotto"
+        },
+        {
+          "corso": "gianna",
+          "giorno": "pinotta"
+        }
+      ]
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
+import { DatiService } from '../dati.service';
 
 @Component({
   selector: 'app-form',
@@ -9,9 +10,10 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
+  private utenti = [];
 
   /** inietto nel costruttore tutte le variabili dichiarandone il tipo */
-  constructor(private formBuilder: FormBuilder, private router: Router, private route: ActivatedRoute) { }
+  constructor(private formBuilder: FormBuilder, private router: Router, private _datiService: DatiService,) { }
 
   /** costruisco il form(builder) inserendo i campi del form e i vari validatori */
   form = this.formBuilder.group({
@@ -21,10 +23,19 @@ export class FormComponent implements OnInit {
 
   /** creo la funzione che al click del bottone mi fa cambiare component */
   entra() {
-    this.router.navigate(['/homepage']);
+    for (let i=0; i < this.utenti.length; i++) {
+      console.log(this.utenti[i].matricola)
+    }
+    console.log(this.form.get("matricola").value);
+    for (let i=0; i < this.utenti.length; i++) {
+      if (this.utenti[i].matricola == this.form.get("matricola").value) {
+        this.router.navigate(['/homepage']);
+      }
+    }
   }
 
   ngOnInit() {
+    this.utenti = this._datiService.getDati();
   }
 
 }

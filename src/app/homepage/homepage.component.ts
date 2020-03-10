@@ -15,16 +15,15 @@ export class HomepageComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) {
   }
 
-  lezioni() {
+  /*lezioni() {
     this.router.navigate([ '/homepage', { outlets: { 'naviga': ['sostenuti'] } } ], { relativeTo: this.route });
-  }
+  }*/
 
   logout() {
     this.router.navigate(['logout'])
   }
 
   ngOnInit() {
-    this.nomeCognome="Mario Rossi";
   }
 
 }

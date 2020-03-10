@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatiService } from '../dati.service';
 
 @Component({
   selector: 'app-orario',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrarioComponent implements OnInit {
 
-  constructor() { }
+  private utenti = [];
+
+  constructor(private _datiService: DatiService) { }
 
   ngOnInit() {
+    this.utenti = this._datiService.getDati();
+    console.log(this.utenti[0].matricola)
   }
 
 }

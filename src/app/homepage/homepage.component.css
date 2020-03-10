@@ -117,13 +117,12 @@
     background-color: #a30003;
     padding: 50px 220px 0 220px;
     display: flex;
-    color: white;
 }
 
 /*blocco a sinistra - riassunto dello studente*/
 
 .riassunto {
-    background-color: #cb5758;
+    background-color: #ECCFC3;
     height: 100%;
     width: 320px;
     border-radius: 6px;

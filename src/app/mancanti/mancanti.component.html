@@ -1,176 +1,22 @@
-<div class="contenitore">
-    <div class="bordo">
-        <div class="sx">
-            <div class="box">
-                <div class="modifica">
-                    <div class="spazio grassetto">Esame:
-                    </div>
-                    <div class="spazioDestra">Sostenuto:
-                    </div>
-                </div>
-                <div class="modifica2">
-                    <div class="spazio2 sinistra">
-                        Tecniche di modellazione digitale
-                    </div>
-                    <div class="destra">
-                        <div>
-                            X
+<div class="flusso">
+    <ng-container *ngFor="let elements of matricole">
+        <ng-container *ngIf="elements.matricola == matricolaInput">
+            <ng-container *ngFor="let corsiMancanti of elements.corsiMancanti">
+                <div class="flusso">
+                    <div class="blocco">
+                        <div class="sopra">
+                            <div class="centrosopra">Esame Mancante</div>
                         </div>
-                        <div (click)="mancantiSostenuti()">
-                            V
+                        <div class="sotto">
+                            <div class="centrosotto">
+                                <div>{{corsiMancanti.nome}}</div>
+                                <div class="spazio"></div>
+                                <mat-icon>check</mat-icon>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="modifica">
-                    <div class="spazio grassetto">Esame:
-                    </div>
-                    <div class="spazioDestra">Sostenuto:
-                    </div>
-                </div>
-                <div class="modifica2">
-                    <div class="spazio2 sinistra">
-                        Tecniche di modellazione digitale
-                    </div>
-                    <div class="destra">
-                        <div>
-                            X
-                        </div>
-                        <div (click)="mancantiSostenuti()">
-                            V
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="modifica">
-                    <div class="spazio grassetto">Esame:
-                    </div>
-                    <div class="spazioDestra">Sostenuto:
-                    </div>
-                </div>
-                <div class="modifica2">
-                    <div class="spazio2 sinistra">
-                        Tecniche di modellazione digitale
-                    </div>
-                    <div class="destra">
-                        <div>
-                            X
-                        </div>
-                        <div (click)="mancantiSostenuti()">
-                            V
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="modifica">
-                    <div class="spazio grassetto">Esame:
-                    </div>
-                    <div class="spazioDestra">Sostenuto:
-                    </div>
-                </div>
-                <div class="modifica2">
-                    <div class="spazio2 sinistra">
-                        Tecn. di modellazione digitale
-                    </div>
-                    <div class="destra">
-                        <div>
-                            X
-                        </div>
-                        <div (click)="mancantiSostenuti()">
-                            V
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="dx">
-            <div class="box">
-                <div class="modifica">
-                    <div class="spazio grassetto">Esame:
-                    </div>
-                    <div class="spazioDestra">Sostenuto:
-                    </div>
-                </div>
-                <div class="modifica2">
-                    <div class="spazio2 sinistra">
-                        Tecniche di modellazione digitale
-                    </div>
-                    <div class="destra">
-                        <div>
-                            X
-                        </div>
-                        <div (click)="mancantiSostenuti()">
-                            V
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="modifica">
-                    <div class="spazio grassetto">Esame:
-                    </div>
-                    <div class="spazioDestra">Sostenuto:
-                    </div>
-                </div>
-                <div class="modifica2">
-                    <div class="spazio2 sinistra">
-                        Tecniche di modellazione digitale
-                    </div>
-                    <div class="destra">
-                        <div>
-                            X
-                        </div>
-                        <div (click)="mancantiSostenuti()">
-                            V
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="modifica">
-                    <div class="spazio grassetto">Esame:
-                    </div>
-                    <div class="spazioDestra">Sostenuto:
-                    </div>
-                </div>
-                <div class="modifica2">
-                    <div class="spazio2 sinistra">
-                        Tecniche di modellazione digitale
-                    </div>
-                    <div class="destra">
-                        <div>
-                            X
-                        </div>
-                        <div (click)="mancantiSostenuti()">
-                            V
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="modifica">
-                    <div class="spazio grassetto">Esame:
-                    </div>
-                    <div class="spazioDestra">Sostenuto:
-                    </div>
-                </div>
-                <div class="modifica2">
-                    <div class="spazio2 sinistra">
-                        Tecniche di modellazione digitale
-                    </div>
-                    <div class="destra">
-                        <div>
-                            X
-                        </div>
-                        <div (click)="mancantiSostenuti()">
-                            V
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            </ng-container>
+        </ng-container>
+    </ng-container>
 </div>

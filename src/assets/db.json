@@ -1,32 +1,260 @@
-{
-  "dati": [
+[
     {
-      "matricola": "11111q",
-      "password": "qwerty",
-      "corsi": [
+      "matricola": "12807T",
+      "password": "alessandro",
+      "anno": "2",
+      "corsiSeguiti": [
         {
-          "corso": "paolo",
-          "giorno": "michele"
+          "nome": "Storia dell'Arte Contemporanea",
+          "crediti": "8",
+          "voto": "30",
+          "aula": "A33",
+          "lezione": "Giovedi",
+          "orario": " 9-14",
+          "data": "21/6/2018"
         },
         {
-          "corso": "paola",
-          "giorno": "michela"
+          "nome": "Tecnologia dei Materiali",
+          "crediti": "6",
+          "voto": "28",
+          "aula": "C6",
+          "lezione": "Venerdi",
+          "orario": "14-18",
+          "data": "23/6/2018"
+        },
+        {
+          "nome": "Sound Design",
+          "crediti": "8",
+          "voto": "29",
+          "aula": "B21",
+          "lezione": "Lunedi/Martedi",
+          "orario": "9-13/16-18",
+          "data": "28/2/2019"
+        },
+        {
+          "nome": "Inglese",
+          "crediti": "8",
+          "voto": "30",
+          "aula": "Magna",
+          "lezione": "Mercoledi",
+          "orario": "11:30-14:30",
+          "data": "3/7/2017"
+        },
+        {
+          "nome": "Regia I",
+          "crediti": "8",
+          "voto": "21",
+          "aula": "C34",
+          "lezione": "Giovedi",
+          "orario": "12:30-15:30",
+          "data": "27/2/2018"
+        }
+      ],
+      "corsiMancanti": [
+        {
+          "nome": "Applicazioni Digitali I",
+          "crediti": "8",
+          "voto": "30",
+          "aula": "A33",
+          "lezione": "Giovedi",
+          "orario": " 9-14",
+          "data": "21/6/2018"
+        },
+        {
+          "nome": "Computer Graphic",
+          "crediti": "6",
+          "voto": "28",
+          "aula": "C6",
+          "lezione": "Venerdi",
+          "orario": "14-18",
+          "data": "23/6/2018"
+        },
+        {
+          "nome": "Tecniche di Animazione digitale",
+          "crediti": "8",
+          "voto": "29",
+          "aula": "B21",
+          "lezione": "Lunedi/Martedi",
+          "orario": "9-13/16-18",
+          "data": "28/2/2019"
+        },
+        {
+          "nome": "Sistemi Interattivi I",
+          "crediti": "8",
+          "voto": "30",
+          "aula": "Magna",
+          "lezione": "Mercoledi",
+          "orario": "11:30-14:30",
+          "data": "3/7/2017"
+        },
+        {
+          "nome": "Web Design II",
+          "crediti": "8",
+          "voto": "21",
+          "aula": "C34",
+          "lezione": "Giovedi",
+          "orario": "12:30-15:30",
+          "data": "27/2/2018"
         }
       ]
     },
     {
-      "matricola": "22222q",
-      "password": "asdfg",
-      "corsi": [
+      "matricola": "11297T",
+      "password": "dalia",
+      "anno": "3",
+      "corsiSeguiti": [
         {
-          "corso": "gianni",
-          "giorno": "pinotto"
+          "nome": "Applicazioni Digitali I",
+          "crediti": "8",
+          "voto": "30",
+          "aula": "A33",
+          "lezione": "Giovedi",
+          "orario": " 9-14",
+          "data": "21/6/2018"
         },
         {
-          "corso": "gianna",
-          "giorno": "pinotta"
+          "nome": "Computer Graphic",
+          "crediti": "6",
+          "voto": "28",
+          "aula": "C6",
+          "lezione": "Venerdi",
+          "orario": "14-18",
+          "data": "23/6/2018"
+        },
+        {
+          "nome": "Tecniche di Animazione digitale",
+          "crediti": "8",
+          "voto": "29",
+          "aula": "B21",
+          "lezione": "Lunedi/Martedi",
+          "orario": "9-13/16-18",
+          "data": "28/2/2019"
+        },
+        {
+          "nome": "Sistemi Interattivi I",
+          "crediti": "8",
+          "voto": "30",
+          "aula": "Magna",
+          "lezione": "Mercoledi",
+          "orario": "11:30-14:30",
+          "data": "3/7/2017"
+        },
+        {
+          "nome": "Web Design II",
+          "crediti": "8",
+          "voto": "21",
+          "aula": "C34",
+          "lezione": "Giovedi",
+          "orario": "12:30-15:30",
+          "data": "27/2/2018"
+        }
+      ],
+      "corsiMancanti": [
+        {
+          "nome": "Storia dell'Arte Contemporanea",
+          "crediti": "8",
+          "voto": "30",
+          "aula": "A33",
+          "lezione": "Giovedi",
+          "orario": " 9-14",
+          "data": "21/6/2018"
+        },
+        {
+          "nome": "Tecnologia dei Materiali",
+          "crediti": "6",
+          "voto": "28",
+          "aula": "C6",
+          "lezione": "Venerdi",
+          "orario": "14-18",
+          "data": "23/6/2018"
+        },
+        {
+          "nome": "Sound Design",
+          "crediti": "8",
+          "voto": "29",
+          "aula": "B21",
+          "lezione": "Lunedi/Martedi",
+          "orario": "9-13/16-18",
+          "data": "28/2/2019"
+        },
+        {
+          "nome": "Inglese",
+          "crediti": "8",
+          "voto": "30",
+          "aula": "Magna",
+          "lezione": "Mercoledi",
+          "orario": "11:30-14:30",
+          "data": "3/7/2017"
+        },
+        {
+          "nome": "Regia I",
+          "crediti": "8",
+          "voto": "21",
+          "aula": "C34",
+          "lezione": "Giovedi",
+          "orario": "12:30-15:30",
+          "data": "27/2/2018"
+        }
+      ]
+    },
+    {
+      "matricola": "33333c",
+      "password": "zxcvb",
+      "corsiSeguiti": [
+        {
+          "nome": 7,
+          "crediti": "7",
+          "voto": "7",
+          "aula": "sette",
+          "lezione": "domenica",
+          "data": ""
+        },
+        {
+          "nome": 8,
+          "crediti": "8",
+          "voto": "8",
+          "aula": "otto",
+          "lezione": "ottodi",
+          "data": ""
+        },
+        {
+          "nome": 9,
+          "crediti": "9",
+          "voto": "9",
+          "aula": "nove",
+          "lezione": "novedi",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "matricola": "44444d",
+      "password": "zxcvb",
+      "corsiSeguiti": [
+        {
+          "nome": 7,
+          "crediti": "7",
+          "voto": "7",
+          "aula": "sette",
+          "lezione": "domenica",
+          "data": ""
+        },
+        {
+          "nome": 8,
+          "crediti": "8",
+          "voto": "8",
+          "aula": "otto",
+          "lezione": "ottodi",
+          "data": ""
+        },
+        {
+          "nome": 9,
+          "crediti": "9",
+          "voto": "9",
+          "aula": "nove",
+          "lezione": "novedi",
+          "data": ""
         }
       ]
     }
   ]
-}

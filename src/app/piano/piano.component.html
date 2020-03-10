@@ -1,1 +1,9 @@
-<p>piano works!</p>
+<ng-container *ngFor="let elementi of matricole">
+    <ng-container *ngIf="elementi.matricola == matricolaInput ">
+        <ng-container *ngFor="let corsiSeguiti of elementi.corsiSeguiti">
+            <div>
+                {{elementi.matricola}}{{corsiSeguiti.nome}}
+            </div>
+        </ng-container>
+    </ng-container>
+</ng-container>

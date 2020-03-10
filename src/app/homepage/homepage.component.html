@@ -1,6 +1,8 @@
 <header>
     <div class="header-principale">
-        <img class="logo-accademia" src="../assets/Img/LogoAlbertinaVettoriale-bianco-header-2.png">
+        <a href="https://www.albertina.academy/" target="_blank">
+            <img class="logo-accademia" src="../assets/Img/LogoAlbertinaVettoriale-bianco-header-2.png">
+        </a>
         <div class="spazio"></div>
         <div class="cerca">
             <input class="form-control form-control-sm mr-3" type="text" placeholder="Search" aria-label="Search">
@@ -26,8 +28,10 @@
         </mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-        <button mat-menu-item [routerLink]='[{ outlets: { naviga: ["sostenuti"] } }]' fxShow.lt-lg="false">Sostenuti</button>
-        <button mat-menu-item [routerLink]='[{ outlets: { naviga: ["mancanti"] } }]' fxShow.lt-lg="false">Mancanti</button>
+        <button mat-menu-item [routerLink]='[{ outlets: { naviga: ["sostenuti"] } }]'
+            fxShow.lt-lg="false">Sostenuti</button>
+        <button mat-menu-item [routerLink]='[{ outlets: { naviga: ["mancanti"] } }]'
+            fxShow.lt-lg="false">Mancanti</button>
     </mat-menu>
     <a [routerLink]='[{ outlets: { naviga: ["avvisi"] } }]' class="naviga" fxShow.lt-lg="false">
         <div>AVVISI</div>
@@ -74,91 +78,45 @@
     </mat-sidenav>
     <!--quello che compare sotto-->
     <mat-sidenav-content>
-        <main class="main">
-            <div class="riassunto">
-                <div class="blocco-alto">
-                    Riassunto Studente
-                </div>
-                <div class="blocco-medio">
-                    <div class="indirizzo-contenitore">
-                        <div class="indirizzo">
-                            Indirizzo:
-                            <br>
-                            Nuove Tecnologie dell'arte
-                        </div>
+        <div class="sfondo">
+            <main class="main">
+                <div class="riassunto">
+                    <div class="blocco-alto">
+                        Riassunto Studente
                     </div>
-                    <div class="immagine-profilo">
-                        <img src="/assets/Img/profilo.jpeg" class="profilo">
-                    </div>
-                </div>
-                <div class="blocco-sotto">
-                    <div class="blocco-sotto-uno">
-                        <div>Anno</div>
-                        <div>1</div>
-                    </div>
-                    <div class="blocco-sotto-due">
-                        <div>Media</div>
-                        <div>27.7</div>
-                    </div>
-                    <div class="blocco-sotto-tre">
-                        <div>Crediti</div>
-                        <div>48</div>
-                    </div>
-                </div>
-            </div>
-            <div class="spazio"></div>
-            <div class="nucleo">
-                <router-outlet name="naviga">
-                </router-outlet>
-            </div>
-        </main>
-        <!--<div class="tutto">
-
-            <div class="sotto">
-                <div class="contenuto">
-                    <div class="sx">
-                        <div class="ciaocnt">
-                            <div class="ciao">
-                                <p class="testo">Benvenuto!</p>
-                                <p class="testo" [innerHTML]="nomeCognome"></p>
+                    <div class="blocco-medio">
+                        <div class="indirizzo-contenitore">
+                            <div class="indirizzo">
+                                Indirizzo:
+                                <br>
+                                Nuove Tecnologie dell'arte
                             </div>
                         </div>
-                        <div class="immagineprofilocnt">
-                            <div class="sopraprofilo">
-                                <div class="riassunto">
-                                    <p class="scuola grande blu">Riassunto studente</p>
-                                    <p class="scuola blu">Indirizzo:<br>Nuove Tecnologie dell'Arte</p>
-                                </div>
-                                <div class="fotoprofilo">
-                                    <img src="/assets/Img/mappa0.jpg" class="faccia">
-                                </div>
-                            </div>
-                            <div class="sottoprofilo">
-                                <div class="colonnauno">
-                                    <p class="blu">Anno Accademico: </p>
-                                    <p class="blu">2019/2020</p>
-                                </div>
-                                <div class="colonnadue">
-                                    <p class="blu">Esami sostenuti: </p>
-                                    <p class="blu">8</p>
-                                </div>
-                                <div class="colonnatre">
-                                    <p class="blu">Crediti Totali: </p>
-                                    <p class="blu">64</p>
-                                </div>
-                            </div>
+                        <div class="immagine-profilo">
+                            <img src="/assets/Img/profilo.jpeg" class="profilo">
                         </div>
                     </div>
-                    <div class="dx">
-                        <div class="immaginesfondo">
-                            <div class="sfondo">
-                                <router-outlet name="naviga" class="contienirouter">
-                                </router-outlet>
-                            </div>
+                    <div class="blocco-sotto">
+                        <div class="blocco-sotto-uno">
+                            <div>Anno</div>
+                            <div>1</div>
+                        </div>
+                        <div class="blocco-sotto-due">
+                            <div>Media</div>
+                            <div>27.7</div>
+                        </div>
+                        <div class="blocco-sotto-tre">
+                            <div>Crediti</div>
+                            <div>48</div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>-->
+                <div class="spazio"></div>
+                <div class="nucleo">
+                    <router-outlet name="naviga">
+                    </router-outlet>
+                </div>
+            </main>
+        </div>
     </mat-sidenav-content>
 </mat-sidenav-container>

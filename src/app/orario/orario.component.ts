@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatiService } from '../dati.service';
+import { MetodoHttpService } from '../metodo-http.service';
 
 @Component({
   selector: 'app-orario',
@@ -7,14 +8,18 @@ import { DatiService } from '../dati.service';
   styleUrls: ['./orario.component.css']
 })
 export class OrarioComponent implements OnInit {
+  matricolaInput: string;
+  private matricole = [];
 
-  private utenti = [];
-
-  constructor(private _datiService: DatiService) { }
+  constructor(private _datiService: DatiService, private http: MetodoHttpService) { }
 
   ngOnInit() {
-    this.utenti = this._datiService.getDati();
-    console.log(this.utenti[0].matricola)
+    this.http.getDb().subscribe(data => this.matricole = data);
+    this.matricolaInput = this.leggiLocale('MatricolaInput');
+  }
+
+  leggiLocale(variabileHtml: string): string {
+    return localStorage.getItem(variabileHtml);
   }
 
 }

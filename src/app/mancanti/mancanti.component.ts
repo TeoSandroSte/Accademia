@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SostenutiComponent } from '../sostenuti/sostenuti.component';
-import { Router, ActivatedRoute, RouterOutlet } from "@angular/router";
+import { MetodoHttpService } from '../metodo-http.service';
 
 @Component({
   selector: 'app-mancanti',
@@ -8,14 +7,20 @@ import { Router, ActivatedRoute, RouterOutlet } from "@angular/router";
   styleUrls: ['./mancanti.component.css']
 })
 export class MancantiComponent implements OnInit {
+  public matricole = [];
+  matricolaInput: string;
 
-  mancantiSostenuti() {
-    this.router.navigate([ '/homepage', { outlets: { 'naviga': ['sostenuti'] } } ], { relativeTo: this.route });
-  }
-
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(private httpService: MetodoHttpService) { }
 
   ngOnInit() {
+    /* prendo i dati dal database fittizio con il metodo usato dal service 'metodo-http' */
+    this.httpService.getDb().subscribe(data => this.matricole = data);
+    /* do alla variabile matricolaInput, che verrà letto dall'html, il valore di cio che è salvato nel local storage */
+    this.matricolaInput = this.leggiLocale('MatricolaInput');
+  }
+
+  leggiLocale(variabileHtml: string): string {
+    return localStorage.getItem(variabileHtml);
   }
 
 }

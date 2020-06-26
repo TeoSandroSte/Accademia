@@ -1,4 +1,4 @@
-<header>
+<header class="header">
     <div class="header-principale">
         <a href="https://www.albertina.academy/" target="_blank">
             <img class="logo-accademia" src="../assets/Img/LogoAlbertinaVettoriale-bianco-header-2.png">
@@ -11,69 +11,112 @@
     </div>
 </header>
 <!--quello che compare nella NAVbar-->
-<mat-toolbar class="header-secondario">
-    <mat-icon class="icona" (click)="snav.toggle()" fxShow="false" fxShow.lt-lg="true">
-        menu
-    </mat-icon>
-    <a [routerLink]='[{ outlets: { naviga: ["calendario"] } }]' class="naviga" fxShow.lt-lg="false">
-        <div>CALENDARIO</div>
-    </a>
-    <a [routerLink]='[{ outlets: { naviga: ["piano"] } }]' class="naviga" fxShow.lt-lg="false">
-        <div>PIANO STUDI</div>
-    </a>
-    <button mat-button [matMenuTriggerFor]="menu" class="naviga" fxShow.lt-lg="false">
-        ESAMI
-        <mat-icon>
-            keyboard_arrow_down
+<mat-toolbar>
+    <div class="header-secondario">
+
+        <mat-icon class="icona" (click)="snav.toggle()" fxShow="false" fxShow.lt-lg="true">
+            menu
         </mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-        <button mat-menu-item [routerLink]='[{ outlets: { naviga: ["sostenuti"] } }]'
-            fxShow.lt-lg="false">Sostenuti</button>
-        <button mat-menu-item [routerLink]='[{ outlets: { naviga: ["mancanti"] } }]'
-            fxShow.lt-lg="false">Mancanti</button>
-    </mat-menu>
-    <a [routerLink]='[{ outlets: { naviga: ["avvisi"] } }]' class="naviga" fxShow.lt-lg="false">
-        <div>AVVISI</div>
-    </a>
-    <a [routerLink]='[{ outlets: { naviga: ["contatti"] } }]' class="naviga" fxShow.lt-lg="false">
-        <div>CONTATTI</div>
-    </a>
-    <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="naviga" fxShow.lt-lg="false">
-        <div>AULE</div>
-    </a>
-    <a (click)="logout()" class="naviga" fxShow.lt-lg="false">
-        <div>LOGOUT</div>
-    </a>
+
+        <a [routerLink]='[{ outlets: { naviga: ["calendario"] } }]' class="naviga" fxShow.lt-lg="false">
+            <div>CALENDARIO</div>
+        </a>
+
+        <a [routerLink]='[{ outlets: { naviga: ["piano"] } }]' class="naviga" fxShow.lt-lg="false">
+            <div>PIANO STUDI</div>
+        </a>
+
+        <button mat-button [matMenuTriggerFor]="menu" class="naviga" fxShow.lt-lg="false">
+            ESAMI
+            <mat-icon>
+                keyboard_arrow_down
+            </mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item class="sosma" [routerLink]='[{ outlets: { naviga: ["sostenuti"] } }]'
+                fxShow.lt-lg="false">SOSTENUTI</button>
+            <button mat-menu-item class="sosma" [routerLink]='[{ outlets: { naviga: ["mancanti"] } }]'
+                fxShow.lt-lg="false">MANCANTI</button>
+        </mat-menu>
+
+        <a [routerLink]='[{ outlets: { naviga: ["avvisi"] } }]' class="naviga" fxShow.lt-lg="false">
+            <div>AVVISI</div>
+        </a>
+
+        <button mat-button [matMenuTriggerFor]="contatti" class="naviga" fxShow.lt-lg="false">
+            CONTATTI
+            <mat-icon>
+                keyboard_arrow_down
+            </mat-icon>
+        </button>
+        <mat-menu #contatti="matMenu">
+            <a mat-menu-item class="sosma" href="../assets/tsconfig.app.pdf" fxShow.lt-lg="false">
+                PROFESSORI
+            </a>
+            <button mat-menu-item class="sosma" [routerLink]='[{ outlets: { naviga: ["contatti"] } }]'
+                fxShow.lt-lg="false">GENERALI</button>
+        </mat-menu>
+
+        <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]' class="naviga" fxShow.lt-lg="false">
+            <div>AULE</div>
+        </a>
+
+        <div class="logout" fxShow.lt-lg="false">
+            <a (click)="logout()">
+                <div>LOGOUT</div>
+            </a>
+        </div>
+    </div>
 </mat-toolbar>
 <mat-sidenav-container class="schermo">
     <!--quello che compare nella SIDEbar-->
     <mat-sidenav #snav>
         <mat-nav-list>
-            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
-                <div>CALENDARIO</div>
-            </a>
-            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
-                <div>PIANO STUDI</div>
-            </a>
-            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
-                <div>ESAMI SOSTENUTI</div>
-            </a>
-            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
-                <div>ESAMI MANCANTI</div>
-            </a>
-            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
-                <div>AVVISI</div>
-            </a>
-            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
-                <div>CONTATTI</div>
-            </a>
-            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
-                <div>AULE</div>
-            </a>
-            <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
-                <div>LOGOUT</div>
-            </a>
+            <div class="lato">
+                <a [routerLink]='[{ outlets: { naviga: ["calendario"] } }]'>
+                    <div>CALENDARIO</div>
+                </a>
+            </div>
+            <div class="lato">
+                <a [routerLink]='[{ outlets: { naviga: ["piano"] } }]'>
+                    <div>PIANO STUDI</div>
+                </a>
+            </div>
+            <div class="lato">
+                <a [routerLink]='[{ outlets: { naviga: ["sostenuti"] } }]'>
+                    <div>SOSTENUTI</div>
+                </a>
+            </div>
+            <div class="lato">
+                <a [routerLink]='[{ outlets: { naviga: ["mancanti"] } }]'>
+                    <div>MANCANTI</div>
+                </a>
+            </div>
+            <div class="lato">
+                <a [routerLink]='[{ outlets: { naviga: ["avvisi"] } }]'>
+                    <div>AVVISI</div>
+                </a>
+            </div>
+            <div class="lato">
+                <a href="../assets/tsconfig.app.pdf">
+                    <div>PROFESSORI</div>
+                </a>
+            </div>
+            <div class="lato">
+                <a [routerLink]='[{ outlets: { naviga: ["contatti"] } }]'>
+                    <div>CONTATTI</div>
+                </a>
+            </div>
+            <div class="lato">
+                <a [routerLink]='[{ outlets: { naviga: ["aule"] } }]'>
+                    <div>AULE</div>
+                </a>
+            </div>
+            <div class="lato">
+                <a (click)="logout()">
+                    <div>LOGOUT</div>
+                </a>
+            </div>
         </mat-nav-list>
     </mat-sidenav>
     <!--quello che compare sotto-->
@@ -81,37 +124,59 @@
         <div class="sfondo">
             <main class="main">
                 <div class="riassunto">
-                    <div class="blocco-alto">
+                    <div (click)="f()" class="blocco-alto">
                         Riassunto Studente
                     </div>
                     <div class="blocco-medio">
                         <div class="indirizzo-contenitore">
                             <div class="indirizzo">
+                                Matricola:
+                                <br>
+                                <ng-container *ngFor="let elements of matricole">
+                                    <ng-container *ngIf="elements.matricola == matricolaInput">
+                                        {{elements.matricola}}
+                                    </ng-container>
+                                </ng-container>
+                            </div>
+                            <div class="indirizzo">
                                 Indirizzo:
                                 <br>
-                                Nuove Tecnologie dell'arte
+                                <ng-container *ngFor="let elements of matricole">
+                                    <ng-container *ngIf="elements.matricola == matricolaInput">
+                                        {{elements.corso}}
+                                    </ng-container>
+                                </ng-container>
                             </div>
                         </div>
                         <div class="immagine-profilo">
-                            <img src="/assets/Img/profilo.jpeg" class="profilo">
+                            <img [src]="test()" class="profilo">
                         </div>
                     </div>
                     <div class="blocco-sotto">
                         <div class="blocco-sotto-uno">
                             <div>Anno</div>
-                            <div>1</div>
+                            <ng-container *ngFor="let elements of matricole">
+                                <ng-container *ngIf="elements.matricola == matricolaInput">
+                                    {{elements.anno}}
+                                </ng-container>
+                            </ng-container>
                         </div>
                         <div class="blocco-sotto-due">
                             <div>Media</div>
-                            <div>27.7</div>
+                            <div>27.53</div>
                         </div>
                         <div class="blocco-sotto-tre">
                             <div>Crediti</div>
                             <div>48</div>
                         </div>
                     </div>
+                    <div class="upload">
+                        <div>
+                            Upload
+                        </div>
+                    </div>
                 </div>
-                <div class="spazio"></div>
+                <div class="spazio2"></div>
                 <div class="nucleo">
                     <router-outlet name="naviga">
                     </router-outlet>

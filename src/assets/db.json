@@ -3,93 +3,104 @@
       "matricola": "12807T",
       "password": "alessandro",
       "anno": "2",
+      "corso": "Pittura",
       "corsiSeguiti": [
         {
           "nome": "Storia dell'Arte Contemporanea",
-          "crediti": "8",
-          "voto": "30",
+          "crediti": 8,
+          "voto": 30,
           "aula": "A33",
+          "piano": "terzo",
           "lezione": "Giovedi",
           "orario": " 9-14",
           "data": "21/6/2018"
         },
         {
           "nome": "Tecnologia dei Materiali",
-          "crediti": "6",
-          "voto": "28",
-          "aula": "C6",
+          "crediti": 6,
+          "voto": 28,
+          "aula": "C5",
+          "piano": "terra",
           "lezione": "Venerdi",
           "orario": "14-18",
           "data": "23/6/2018"
         },
         {
           "nome": "Sound Design",
-          "crediti": "8",
-          "voto": "29",
-          "aula": "B21",
+          "crediti": 8,
+          "voto": 29,
+          "aula": "P33",
+          "piano": "terzo",
           "lezione": "Lunedi/Martedi",
           "orario": "9-13/16-18",
           "data": "28/2/2019"
         },
         {
           "nome": "Inglese",
-          "crediti": "8",
-          "voto": "30",
-          "aula": "Magna",
+          "crediti": 8,
+          "voto": 30,
+          "aula": "Salone d'onore",
+          "piano": "secondo",
           "lezione": "Mercoledi",
           "orario": "11:30-14:30",
           "data": "3/7/2017"
         },
         {
           "nome": "Regia I",
-          "crediti": "8",
-          "voto": "21",
-          "aula": "C34",
+          "crediti": 8,
+          "voto": 21,
+          "aula": "C41",
+          "piano": "quarto",
           "lezione": "Giovedi",
           "orario": "12:30-15:30",
           "data": "27/2/2018"
         },
         {
           "nome": "Applicazioni Digitali I",
-          "crediti": "8",
-          "voto": "30",
-          "aula": "A33",
+          "crediti": 8,
+          "voto": 30,
+          "aula": "A11",
+          "piano": "primo",
           "lezione": "Giovedi",
           "orario": " 9-14",
           "data": "21/6/2018"
         },
         {
           "nome": "Computer Graphic",
-          "crediti": "6",
-          "voto": "28",
-          "aula": "C6",
+          "crediti": 6,
+          "voto": 28,
+          "aula": "G3",
+          "piano": "terra",
           "lezione": "Venerdi",
           "orario": "14-18",
           "data": "23/6/2018"
         },
         {
           "nome": "Tecniche di Animazione digitale",
-          "crediti": "8",
-          "voto": "29",
-          "aula": "B21",
+          "crediti": 8,
+          "voto": 29,
+          "aula": "S13",
+          "piano": "primo",
           "lezione": "Lunedi/Martedi",
           "orario": "9-13/16-18",
           "data": "28/2/2019"
         },
         {
           "nome": "Sistemi Interattivi I",
-          "crediti": "8",
-          "voto": "30",
+          "crediti": 8,
+          "voto": 30,
           "aula": "Magna",
+          "piano": "secondo",
           "lezione": "Mercoledi",
           "orario": "11:30-14:30",
           "data": "3/7/2017"
         },
         {
           "nome": "Web Design II",
-          "crediti": "8",
-          "voto": "21",
-          "aula": "C34",
+          "crediti": 8,
+          "voto": 21,
+          "aula": "C29",
+          "piano": "secondo",
           "lezione": "Giovedi",
           "orario": "12:30-15:30",
           "data": "27/2/2018"
@@ -98,45 +109,50 @@
       "corsiMancanti": [
         {
           "nome": "Applicazioni Digitali I",
-          "crediti": "8",
-          "voto": "30",
+          "crediti": 8,
+          "voto": 30,
           "aula": "A33",
+          "piano": "terzo",
           "lezione": "Giovedi",
           "orario": " 9-14",
           "data": "21/6/2018"
         },
         {
           "nome": "Computer Graphic",
-          "crediti": "6",
-          "voto": "28",
-          "aula": "C6",
+          "crediti": 6,
+          "voto": 28,
+          "aula": "C1",
+          "piano": "terra",
           "lezione": "Venerdi",
           "orario": "14-18",
           "data": "23/6/2018"
         },
         {
           "nome": "Tecniche di Animazione digitale",
-          "crediti": "8",
-          "voto": "29",
-          "aula": "B21",
+          "crediti": 8,
+          "voto": 29,
+          "aula": "S41",
+          "piano": "quarto",
           "lezione": "Lunedi/Martedi",
           "orario": "9-13/16-18",
           "data": "28/2/2019"
         },
         {
           "nome": "Sistemi Interattivi I",
-          "crediti": "8",
-          "voto": "30",
-          "aula": "Magna",
+          "crediti": 8,
+          "voto": 0,
+          "aula": "Salone d'onore",
+          "piano": "secondo",
           "lezione": "Mercoledi",
           "orario": "11:30-14:30",
           "data": "3/7/2017"
         },
         {
           "nome": "Web Design II",
-          "crediti": "8",
-          "voto": "21",
+          "crediti": 8,
+          "voto": 21,
           "aula": "C34",
+          "piano": "terzo",
           "lezione": "Giovedi",
           "orario": "12:30-15:30",
           "data": "27/2/2018"
@@ -147,48 +163,54 @@
       "matricola": "11297T",
       "password": "dalia",
       "anno": "3",
+      "corso": "Nuove Tecnologie dell'arte",
       "corsiSeguiti": [
         {
           "nome": "Applicazioni Digitali I",
-          "crediti": "8",
-          "voto": "30",
+          "crediti": 8,
+          "voto": 30,
           "aula": "A33",
+          "piano": "terzo",
           "lezione": "Giovedi",
           "orario": " 9-14",
           "data": "21/6/2018"
         },
         {
           "nome": "Computer Graphic",
-          "crediti": "6",
-          "voto": "28",
-          "aula": "C6",
+          "crediti": 6,
+          "voto": 28,
+          "aula": "C1",
+          "piano": "terra",
           "lezione": "Venerdi",
           "orario": "14-18",
           "data": "23/6/2018"
         },
         {
           "nome": "Tecniche di Animazione digitale",
-          "crediti": "8",
-          "voto": "29",
-          "aula": "B21",
+          "crediti": 8,
+          "voto": 29,
+          "aula": "S41",
+          "piano": "quarto",
           "lezione": "Lunedi/Martedi",
           "orario": "9-13/16-18",
           "data": "28/2/2019"
         },
         {
           "nome": "Sistemi Interattivi I",
-          "crediti": "8",
-          "voto": "30",
-          "aula": "Magna",
+          "crediti": 8,
+          "voto": 0,
+          "aula": "Salone d'onore",
+          "piano": "secondo",
           "lezione": "Mercoledi",
           "orario": "11:30-14:30",
           "data": "3/7/2017"
         },
         {
           "nome": "Web Design II",
-          "crediti": "8",
-          "voto": "21",
+          "crediti": 8,
+          "voto": 21,
           "aula": "C34",
+          "piano": "terzo",
           "lezione": "Giovedi",
           "orario": "12:30-15:30",
           "data": "27/2/2018"
@@ -197,108 +219,103 @@
       "corsiMancanti": [
         {
           "nome": "Storia dell'Arte Contemporanea",
-          "crediti": "8",
-          "voto": "30",
+          "crediti": 8,
+          "voto": 30,
           "aula": "A33",
+          "piano": "terzo",
           "lezione": "Giovedi",
           "orario": " 9-14",
           "data": "21/6/2018"
         },
         {
           "nome": "Tecnologia dei Materiali",
-          "crediti": "6",
-          "voto": "28",
-          "aula": "C6",
+          "crediti": 6,
+          "voto": 28,
+          "aula": "C5",
+          "piano": "terra",
           "lezione": "Venerdi",
           "orario": "14-18",
           "data": "23/6/2018"
         },
         {
           "nome": "Sound Design",
-          "crediti": "8",
-          "voto": "29",
-          "aula": "B21",
+          "crediti": 8,
+          "voto": 29,
+          "aula": "P33",
+          "piano": "terzo",
           "lezione": "Lunedi/Martedi",
           "orario": "9-13/16-18",
           "data": "28/2/2019"
         },
         {
           "nome": "Inglese",
-          "crediti": "8",
-          "voto": "30",
-          "aula": "Magna",
+          "crediti": 8,
+          "voto": 30,
+          "aula": "Salone d'onore",
+          "piano": "secondo",
           "lezione": "Mercoledi",
           "orario": "11:30-14:30",
           "data": "3/7/2017"
         },
         {
           "nome": "Regia I",
-          "crediti": "8",
-          "voto": "21",
-          "aula": "C34",
+          "crediti": 8,
+          "voto": 21,
+          "aula": "C41",
+          "piano": "quarto",
           "lezione": "Giovedi",
           "orario": "12:30-15:30",
           "data": "27/2/2018"
-        }
-      ]
-    },
-    {
-      "matricola": "33333c",
-      "password": "zxcvb",
-      "corsiSeguiti": [
-        {
-          "nome": 7,
-          "crediti": "7",
-          "voto": "7",
-          "aula": "sette",
-          "lezione": "domenica",
-          "data": ""
         },
         {
-          "nome": 8,
-          "crediti": "8",
-          "voto": "8",
-          "aula": "otto",
-          "lezione": "ottodi",
-          "data": ""
+          "nome": "Applicazioni Digitali I",
+          "crediti": 8,
+          "voto": 30,
+          "aula": "A11",
+          "piano": "primo",
+          "lezione": "Giovedi",
+          "orario": " 9-14",
+          "data": "21/6/2018"
         },
         {
-          "nome": 9,
-          "crediti": "9",
-          "voto": "9",
-          "aula": "nove",
-          "lezione": "novedi",
-          "data": ""
-        }
-      ]
-    },
-    {
-      "matricola": "44444d",
-      "password": "zxcvb",
-      "corsiSeguiti": [
-        {
-          "nome": 7,
-          "crediti": "7",
-          "voto": "7",
-          "aula": "sette",
-          "lezione": "domenica",
-          "data": ""
+          "nome": "Computer Graphic",
+          "crediti": 6,
+          "voto": 28,
+          "aula": "G3",
+          "piano": "terra",
+          "lezione": "Venerdi",
+          "orario": "14-18",
+          "data": "23/6/2018"
         },
         {
-          "nome": 8,
-          "crediti": "8",
-          "voto": "8",
-          "aula": "otto",
-          "lezione": "ottodi",
-          "data": ""
+          "nome": "Tecniche di Animazione digitale",
+          "crediti": 8,
+          "voto": 29,
+          "aula": "S13",
+          "piano": "primo",
+          "lezione": "Lunedi/Martedi",
+          "orario": "9-13/16-18",
+          "data": "28/2/2019"
         },
         {
-          "nome": 9,
-          "crediti": "9",
-          "voto": "9",
-          "aula": "nove",
-          "lezione": "novedi",
-          "data": ""
+          "nome": "Sistemi Interattivi I",
+          "crediti": 8,
+          "voto": 30,
+          "aula": "Magna",
+          "piano": "secondo",
+          "lezione": "Mercoledi",
+          "orario": "11:30-14:30",
+          "data": "3/7/2017"
+        },
+        {
+          "nome": "Web Design II",
+          "crediti": 8,
+          "voto": 21,
+          "aula": "C29",
+          "piano": "secondo",
+          "lezione": "Giovedi",
+          "orario": "12:30-15:30",
+          "data": "27/2/2018"
         }
       ]
     }

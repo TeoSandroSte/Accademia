@@ -1,14 +1,19 @@
 <main class="main">
     <form class="form" [formGroup]="form">
-        <img src="../assets/Img/LogoAlbertinaVettoriale-bianco-header-2.png">
+        <img src="../assets/Img/LogoAlbertinaVettoriale-bianco-header-2.png" class="immagine">
         <p class="login">Login</p>
         <div class="form-group">
-            <label for="exampleInputEmail1">Numero di matricola</label>
-            <input type="text" placeholder="12345A" class="form-control" formControlName="matricola" required>
+            <mat-form-field class="field" appearance="outline">
+                <mat-label>Matricola</mat-label>
+                <input matInput class="placeholder" placeholder="12345A" formControlName="matricola" required>
+                <mat-hint>EX: 12345M</mat-hint>
+            </mat-form-field>
         </div>
         <div class="form-group">
-            <label for="exampleInputEmail1">Password</label>
-            <input type="password" class="form-control" formControlName="password" required>
+            <mat-form-field class="field" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput class="placeholder" placeholder="12345A" formControlName="password" required>
+            </mat-form-field>
         </div>
         <button mat-raised-button class="bottone" [disabled]="form.invalid" (click)="entra()">Entra</button>
     </form>

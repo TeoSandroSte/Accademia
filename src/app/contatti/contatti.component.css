@@ -1,0 +1,74 @@
+.fullscreen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flusso {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.mappa {
+    width: 95%;
+}
+
+.contatti {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width  : 95%;
+}
+
+.sx, .dx {
+    width: 47%;
+    margin: 0;
+}
+
+.blocco {
+    width: 100%;
+    background-color: #ECCFC3;
+    margin: 20px 0 20px 0;
+    border-radius: 6px;
+    padding-bottom: 10px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.titolo {
+    margin: 5px 0 5px 10px;
+}
+
+.titoloPrincipale {
+    margin-left: 10px;
+    padding-top: 10px;
+    font-weight: bolder;
+    font-size: x-large;
+    font-size: 25px;
+    color: #ae3739;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+    .contatti {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width  : 95%;
+    }
+
+    .sx, .dx {
+        width: 97%;
+        margin: 0;
+    }
+}

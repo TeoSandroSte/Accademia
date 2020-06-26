@@ -35,8 +35,10 @@ export class FormComponent implements OnInit {
       if (this.matricole[i].matricola == this.form.get("matricola").value) { */
       if (this.matricole[i].matricola == this.form.get("matricola").value) {
         if (this.matricole[i].password == this.form.get("password").value) {
-          this.locale.salvaLocal(this.form.get('matricola').value);
-          this.router.navigate(['/homepage']);
+          /** si potrebbe salvare sul local storage chiamando un servizio in questo modo:
+           * this.locale.salvaLocal(this.form.get('matricola').value); */
+          localStorage.setItem('MatricolaInput', this.form.get('matricola').value)
+          this.router.navigate([ '/homepage' ]);
         }
       }
     }

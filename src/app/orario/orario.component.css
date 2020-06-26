@@ -1,3 +1,11 @@
+.contenitore {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .flusso {
     width: auto;
     height: auto;
@@ -24,6 +32,8 @@
     border-bottom: 2px #ae3739 solid;
     display: flex;
     flex-direction: row;
+    font-weight: bolder;
+    color: #ae3739;
 }
 
 .sotto {
@@ -53,8 +63,8 @@
 .centro {
     width: auto;
     margin: 10px;
-    word-wrap: break-word;
-    word-break: break-all;
+    overflow-wrap: break-word;
+    word-break: break-word;
     text-align: center;
 }
 
@@ -65,8 +75,5 @@
 @media screen and (max-width: 1445px) {
     .flusso {
         align-items: center;
-    }
-    .blocco {
-
     }
 }

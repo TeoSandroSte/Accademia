@@ -10,7 +10,6 @@ import { MancantiComponent } from './mancanti/mancanti.component';
 import { AvvisiComponent } from './avvisi/avvisi.component';
 import { ContattiComponent } from './contatti/contatti.component';
 import { AuleComponent } from './aule/aule.component';
-import { ImpostazioniComponent } from './impostazioni/impostazioni.component';
 
 
 const routes: Routes = [
@@ -24,7 +23,6 @@ const routes: Routes = [
       { path: 'avvisi', component: AvvisiComponent, outlet: 'naviga' },
       { path: 'contatti', component: ContattiComponent, outlet: 'naviga' },
       { path: 'aule', component: AuleComponent, outlet: 'naviga' },
-      { path: 'impostazioni', component: ImpostazioniComponent, outlet: 'naviga' }
     ]
   },
   { path: 'logout', component: FormComponent },
